@@ -66,8 +66,6 @@ Decision Tree
 
 Random Forest
 
-(Optional: XGBoost / Gradient Boosting)
-
 Model Evaluation
 
 Accuracy
