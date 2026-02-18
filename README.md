@@ -1,12 +1,12 @@
-🌊 Rising Waters
+# Rising Waters
 A Machine Learning Approach to Flood Prediction
-📌 Project Overview
+# Project Overview
 
 Rising Waters is a data-driven flood prediction system that leverages Machine Learning techniques to forecast potential flood risks using historical rainfall, river water levels, and environmental datasets. The goal of this project is to improve early warning systems, enhance disaster preparedness, and support data-informed decision-making for communities and authorities.
 
 Floods are among the most devastating natural disasters worldwide. By analyzing patterns in historical environmental data, this project aims to predict high-risk situations before they occur, enabling timely preventive measures.
 
-🎯 Objectives
+# Objectives
 
 Analyze historical rainfall and river water level data
 
@@ -18,7 +18,7 @@ Provide risk classification (Low / Medium / High)
 
 Support early warning systems with predictive insights
 
-🛠️ Technologies Used
+# Technologies Used
 
 Python
 
@@ -30,19 +30,19 @@ Scikit-learn – Machine Learning models
 
 Jupyter Notebook – Development & experimentation
 
-📊 Dataset Features
+ # Dataset Features
 
 The model uses the following types of data:
 
-🌧️ Historical Rainfall Data
+# Historical Rainfall Data
 
-🌊 River Water Levels
+# River Water Levels
 
-🌡️ Temperature & Environmental Factors
+# Temperature & Environmental Factors
 
-📅 Seasonal & Time-based Indicators
+# Seasonal & Time-based Indicators
 
-🤖 Machine Learning Approach
+# Machine Learning Approach
 
 Data Cleaning & Preprocessing
 
@@ -80,7 +80,7 @@ F1-Score
 
 Confusion Matrix
 
-📈 Expected Outcomes
+# Expected Outcomes
 
 Early detection of flood-prone conditions
 
@@ -90,7 +90,7 @@ Reduced risk to human lives and infrastructure
 
 Data-backed decision support system
 
-🚀 Future Improvements
+# Future Improvements
 
 Integration with real-time weather APIs
 
@@ -100,6 +100,6 @@ Integration with IoT-based water level sensors
 
 Deep Learning models for improved accuracy
 
-📌 Conclusion
+# Conclusion
 
 Rising Waters demonstrates how Machine Learning can be applied to environmental data to create intelligent flood forecasting systems. By combining historical analysis with predictive modeling, this project contributes toward smarter and safer communities.
