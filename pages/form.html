@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flood Detection</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+     body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #b8dfff, #0072ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.form-container {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 480px;
+  box-sizing: border-box;
+}
+
+.form-container h2 {
+  text-align: center;
+  color: #0072ff;
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 18px;
+  border: 1.8px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.form-container input:focus {
+  border-color: #0072ff;
+  outline: none;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  background-color: #0072ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: #005ec4;
+}
+
+@media (max-width: 500px) {
+  .form-container {
+    margin: 20px;
+    padding: 25px 20px;
+  }
+
+  .form-container h2 {
+    font-size: 22px;
+  }
+
+  .form-container input,
+  .form-container button {
+    font-size: 15px;
+    padding: 12px;
+  }
+}
+
+.form-container {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+    </style>
+  </head>
+  <body>
+    <br />
+    <body>
+  <div class="form-container">
+    <h2>Flood Detection</h2>
+    <form method="POST" action="/predict">
+      <input type="text" name="Temperature" placeholder="Temperature" required />
+      <input type="text" name="Humidity" placeholder="Humidity" required />
+      <input type="text" name="Cloud_cover" placeholder="Cloud Cover" required />
+      <input type="text" name="Annual_rainfall" placeholder="Annual Rainfall" required />
+      <input type="text" name="Jan_Feb_rainfall" placeholder="Jan-Feb Rainfall" required />
+      <input type="text" name="Mar_May_rainfall" placeholder="Mar-May Rainfall" required />
+      <input type="text" name="Jun_Sep_rainfall" placeholder="Jun-Sep Rainfall" required />
+      <input type="text" name="Oct_Dec_rainfall" placeholder="Oct-Dec Rainfall" required />
+      <input type="text" name="Avg_june_rainfall" placeholder="Avg June Rainfall" required />
+      <input type="text" name="Sub_surface_water_level" placeholder="Sub-surface Water Level" required />
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+
+  </body>
+</html>

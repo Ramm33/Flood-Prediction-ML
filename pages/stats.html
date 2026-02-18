@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <title>Flood Detection</title>
+  </head>
+  <body>
+    <div class="all">
+      <nav
+        class="navbar navbar-expand-lg navbar-dark"
+        style="
+          display: flex;
+          background: linear-gradient(to right, #4682b4, #0072ff);
+        "
+      >
+        <a class="navbar-brand" href="/home">Flood detection</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="/guidelines"
+              >Emergency tips <span class="sr-only">(current)</span></a
+            >
+            <a class="nav-item nav-link" href="/stats"
+              >Past Flood Data</a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <br />
+      <br />
+
+      <div class="row row-cols-1 row-cols-md-2">
+        <div class="col mb-4">
+          <div class="card">
+            <img
+              src="{{ url_for('static', filename='images/chart1.jpg') }}"
+              class="card-img-top"
+              alt="..."
+              style="border: solid 2px black"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Global</h5>
+              <p class="card-text">
+                Between 1990 and 2022, global floods caused over $1.3 trillion
+                in economic losses, affecting more than 3.2 billion people
+                worldwide. A total of 4,713 flood events were recorded across
+                168 countries. These floods led to over 218,000 deaths, showing
+                the devastating human impact. Developing nations often face the
+                worst outcomes due to poor infrastructure and limited disaster
+                response systems.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img
+              src="{{ url_for('static', filename='images/chart2.jpg') }}"
+              class="card-img-top"
+              alt="..."
+              style="border: solid 2px black; height: 565px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">State-wise</h5>
+              <p class="card-text">
+                Certain states consistently face the brunt of flooding due to
+                their geography and climate. West Bengal leads with ₹16,079
+                crore in damage, followed by Karnataka (₹9,833 crore), Tamil
+                Nadu (₹7,040 crore), and Andhra Pradesh (₹6,320 crore).
+                Maharashtra also saw about ₹4,000 crore in damages in 2021
+                alone. These figures highlight where mitigation efforts and
+                infrastructure investment are most needed.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img
+              src="{{ url_for('static', filename='images/chart3.jpg') }}"
+              class="card-img-top"
+              alt="..."
+              style="border: solid 2px black; height: 567px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Seasonal</h5>
+              <p class="card-text">
+                Flood damage in India follows a predictable monthly pattern,
+                peaking during the monsoon season from June to September. These
+                months bring heavy rainfall that causes rivers to overflow,
+                leading to urban and rural flooding. Historical data shows major
+                flood events almost always coincide with these months. This
+                seasonal trend is vital for disaster planning and early warning
+                systems.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img
+              src="{{ url_for('static', filename='images/chart4.jpg') }}"
+              class="card-img-top"
+              alt="..."
+              style="border: solid 2px black"
+            />
+            <div class="card-body">
+              <h5 class="card-title">India</h5>
+              <p class="card-text">
+                India is one of the most flood-affected countries, suffering
+                over $115 billion in damages since 1990. More than 629 million
+                people have been affected and over 46,000 lives lost. On
+                average, floods cause India ₹25,000 crore in losses each year,
+                with spikes during extreme events. In 2021 alone, the damage
+                reached ₹49,618 crore (~$6.2 billion).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      style="
+        background: linear-gradient(to right, #4682b4, #0072ff);
+        color: #fff;
+        padding: 32px 0 16px 0;
+        text-align: center;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        margin-top: 60px;
+        font-family: Roboto, sans-serif;
+      "
+    >
+      <div style="max-width: 900px; margin: auto">
+        <p style="margin: 0; font-size: 18px; font-weight: 500">
+          Copyright © 2048
+          <a
+            href="#"
+            style="color: #fff; text-decoration: underline; font-weight: 700"
+            >Rainwater</a
+          >All rights reserved.<br />
+        </p>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
