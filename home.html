@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+
+    <title>Flood Detection</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark " style="display: flex; background : linear-gradient(to right, #4682B4, #0072ff);">
+  <a class="navbar-brand" href="/home">Flood detection</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="/guidelines">Emergency tips <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="/stats">Past Flood Data</a>
+     
+      
+    </div>
+  </div>
+</nav>
+<div class="background">
+
+</div>
+
+<style>
+  .background{
+  background-image: url("/static/images/Add\ a\ heading.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  width: 100%;
+}
+</style>
+ <div class="mark"  >
+<marquee >
+   <b class="marking"> Check out every features to stay safe from floods </b>
+</marquee>
+</div> 
+<br>
+<br>
+
+
+
+<div class="features1">
+    <h2 style="display: flex; align-items: center; justify-content: center; font-size: 50px;"><b>Our Features</b></h2>
+</div>
+<div class="card-deck">
+  <div class="card" >
+     <img src="{{ url_for('static', filename='images/emergency.png') }}" alt="Flood" />
+ 
+    <div class="card-body">
+      <a style="color: black;" href="/guidelines">Emergency Tips & Safety Guidelines<h5 class="card-title"></h5></a>
+      <p class="card-text">In case of a flood, always stay informed by following official weather alerts and updates. If water levels start rising, act fast and move to higher ground without waiting for instructions. Keep an emergency kit ready with essentials like clean water, non-perishable food, a flashlight, and important documents to stay safe and prepared.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="{{ url_for('static', filename='images/past.png') }}" class="card-img-top" style="border: solid 2px black;" alt="..." style="width: 474px; height: 266px;" >
+    <div class="card-body">
+      <h5 class="card-title"><a href="/stats" style="color: black;">Past Flood data</a> </h5>
+      <p class="card-text">Past flood data reveals how quickly water levels can rise and how devastating the impact can be on lives and infrastructure. Analyzing historical flood patterns helps identify high-risk zones, peak seasons, and vulnerable communities. This data is crucial for building early warning systems, planning evacuation routes, and improving future emergency response strategies. </p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="{{ url_for('static', filename='images/weather.png') }}" class="card-img-top" alt="..." style="border: solid 2px black;" style="width: 474px; height: 266px;">
+    <div class="card-body">
+      <h5 class="card-title"><a style="color: black;" href="https://openweathermap.org/">Live Weather</a></h5>
+      <p class="card-text">Live weather data plays a critical role in flood prediction by providing real-time updates on rainfall intensity, river levels, and storm patterns. It enables timely alerts and quick decision-making to minimize damage and ensure public safety. Continuous monitoring of live conditions helps authorities and communities respond faster and more effectively during emergencies.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+</div>
+</div>
+
+<br>
+<div class="buttons">
+<button style="width: 570px; display: flex ; justify-content: center; align-items: center; max-width: 570px; margin-left: 650px; background : linear-gradient(to right, #4682B4, #0072ff);" type="button" class="btn btn-primary btn-lg btn-block "><a style="color: white; " href="/form">Prediction Model</a></button>
+</div>
+
+
+
+<footer style="background : linear-gradient(to right, #4682B4, #0072ff); color:#fff; padding:32px 0 16px 0; text-align:center; border-top-left-radius:0px; border-top-right-radius:0px; margin-top:60px; font-family:Roboto,sans-serif;">
+  <div style="max-width:900px; margin:auto;">
+    <p style="margin:0; font-size:18px; font-weight:500;">
+      Copyright © 2048 
+      <a href="#" style="color:#fff; text-decoration:underline; font-weight:700;">Rainwater</a>All rights reserved.<br>
+      
+    </p>
+  </div>
+</footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
